@@ -1,23 +1,9 @@
-# Yada Folio - ポートフォリオサイト
-
-シンプルで美しいポートフォリオサイト。アクセントカラー **#0BA29A** を採用。
-
-## 🎨 特徴
-
-- ✅ レスポンシブデザイン（PC・タブレット・スマホ対応）
-- ✅ 6種類のカテゴリーフィルター機能
-- ✅ ページトランジションアニメーション（Framer Motion）
-- ✅ プロジェクト詳細ページのギャラリー機能
-- ✅ Aboutページ
-- ✅ クリーンでモダンなUI
-- ✅ **画像をGit管理（Figma Makeのクラウドに依存しない）**
-
-## 📁 プロジェクト構成
+# Yada_folio
 
 ```
 /
 ├── public/
-│   └── images/                      # 🖼️ 画像ファイル（Git管理）
+│   └── images/                      # 画像ファイル（Git管理）
 │       ├── logo.png
 │       ├── profile.png
 │       ├── about-header.jpg
@@ -41,19 +27,17 @@
 │   │   │   ├── ProjectDetail.tsx
 │   │   │   └── About.tsx
 │   │   └── data/
-│   │       └── projects.ts         # ⭐ コンテンツデータ（ここを編集）
+│   │       └── projects.ts         # コンテンツデータ（ここを編集）
 │   └── styles/
 │       ├── theme.css               # テーマカラー設定
 │       └── fonts.css               # フォント設定
 ├── scripts/
-│   └── download-images.md          # 📥 画像ダウンロードガイド
-├── CONTENT_GUIDE.md                # 📝 コンテンツ編集ガイド
-├── IMAGE_MANAGEMENT_GUIDE.md       # 🖼️ 画像管理ガイド
-├── GITHUB_GUIDE.md                 # 🔧 GitHub連携ガイド
+│   └── download-images.md          # 画像ダウンロードガイド
+├── CONTENT_GUIDE.md                # コンテンツ編集ガイド
+├── IMAGE_MANAGEMENT_GUIDE.md       # 画像管理ガイド
+├── GITHUB_GUIDE.md                 # GitHub連携ガイド
 └── package.json
 ```
-
-## 🚀 クイックスタート
 
 ### 1. 画像をダウンロード
 
@@ -111,7 +95,7 @@ git commit -m "プロジェクト7の画像を追加"
 
 ---
 
-## 📚 詳細ガイド
+## 詳細ガイド
 
 - **画像管理**: [IMAGE_MANAGEMENT_GUIDE.md](./IMAGE_MANAGEMENT_GUIDE.md)
 - **画像ダウンロード**: [scripts/download-images.md](./scripts/download-images.md)
@@ -120,7 +104,7 @@ git commit -m "プロジェクト7の画像を追加"
 
 ---
 
-## 🎨 カスタマイズ
+## カスタマイズ
 
 ### アクセントカラーを変更
 
@@ -145,7 +129,7 @@ git commit -m "プロジェクト7の画像を追加"
 
 ---
 
-## 🛠️ 技術スタック
+## 技術スタック
 
 - **フレームワーク**: React 18 + TypeScript
 - **ルーティング**: React Router DOM
@@ -156,7 +140,7 @@ git commit -m "プロジェクト7の画像を追加"
 
 ---
 
-## 📦 依存関係のインストール
+## 依存関係のインストール
 
 ```bash
 npm install
@@ -166,7 +150,7 @@ pnpm install
 
 ---
 
-## 🌐 デプロイ
+## デプロイ
 
 ### Figma Make（推奨）
 
@@ -189,7 +173,7 @@ npm run build
 
 ---
 
-## 🔄 バージョン管理（GitHub）
+## バージョン管理（GitHub）
 
 ```bash
 # 初回セットアップ
@@ -209,7 +193,7 @@ git push
 
 ---
 
-## 📝 カテゴリー一覧
+## カテゴリー一覧
 
 フィルター機能で使用できるカテゴリー：
 
@@ -224,7 +208,7 @@ git push
 
 ---
 
-## 🐛 トラブルシューティング
+## トラブルシューティング
 
 ### Q: プロジェクトが表示されない
 
@@ -246,36 +230,33 @@ git push
 **A**: カテゴリー名のスペルミスを確認
 
 ```typescript
-// ❌ 間違い
+// 間違い
 category: "プロダクト デザイン"  // スペースが入っている
 
-// ✅ 正しい
+// 正しい
 category: "プロダクトデザイン"
 ```
 
 ---
 
-## 📄 ライセンス
+## ライセンス
 
 プロジェクトのライセンス情報をここに記載してください。
 
 ---
 
-## 👤 作成者
+## 作成者
 
 **Yada Design Studio**
 
-- Website: [yadafolio.com](https://yadafolio.com)
+- Website: [yadafolio.me](https://yadafolio.me)
 - Email: info@portfolio.com
 
 ---
 
-## 🙏 謝辞
+## 謝辞
 
-- [Unsplash](https://unsplash.com/) - 高品質な無料画像
 - [Lucide](https://lucide.dev/) - 美しいアイコンセット
 - [Tailwind CSS](https://tailwindcss.com/) - ユーティリティファーストCSS
 
 ---
-
-**Happy Designing! 🎨✨**
