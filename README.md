@@ -1,9 +1,12 @@
 # Yada_folio
 
+
+## 📁 プロジェクト構成
+
 ```
 /
 ├── public/
-│   └── images/                      # 画像ファイル（Git管理）
+│   └── images/                      # 🖼️ 画像ファイル（Git管理）
 │       ├── logo.png
 │       ├── profile.png
 │       ├── about-header.jpg
@@ -27,17 +30,19 @@
 │   │   │   ├── ProjectDetail.tsx
 │   │   │   └── About.tsx
 │   │   └── data/
-│   │       └── projects.ts         # コンテンツデータ（ここを編集）
+│   │       └── projects.ts         # ⭐ コンテンツデータ（ここを編集）
 │   └── styles/
 │       ├── theme.css               # テーマカラー設定
 │       └── fonts.css               # フォント設定
 ├── scripts/
-│   └── download-images.md          # 画像ダウンロードガイド
-├── CONTENT_GUIDE.md                # コンテンツ編集ガイド
-├── IMAGE_MANAGEMENT_GUIDE.md       # 画像管理ガイド
-├── GITHUB_GUIDE.md                 # GitHub連携ガイド
+│   └── download-images.md          # 📥 画像ダウンロードガイド
+├── CONTENT_GUIDE.md                # 📝 コンテンツ編集ガイド
+├── IMAGE_MANAGEMENT_GUIDE.md       # 🖼️ 画像管理ガイド
+├── GITHUB_GUIDE.md                 # 🔧 GitHub連携ガイド
 └── package.json
 ```
+
+## クイックスタート
 
 ### 1. 画像をダウンロード
 
@@ -140,7 +145,7 @@ git commit -m "プロジェクト7の画像を追加"
 
 ---
 
-## 依存関係のインストール
+##  依存関係のインストール
 
 ```bash
 npm install
@@ -230,27 +235,20 @@ git push
 **A**: カテゴリー名のスペルミスを確認
 
 ```typescript
-// 間違い
+// ❌ 間違い
 category: "プロダクト デザイン"  // スペースが入っている
 
-// 正しい
+// ✅ 正しい
 category: "プロダクトデザイン"
 ```
 
----
-
-## ライセンス
-
-プロジェクトのライセンス情報をここに記載してください。
-
----
 
 ## 作成者
 
-**Yada Design Studio**
+**Yadanium**
 
 - Website: [yadafolio.me](https://yadafolio.me)
-- Email: info@portfolio.com
+- Email: yadamisuzu3122@gmail.com
 
 ---
 
