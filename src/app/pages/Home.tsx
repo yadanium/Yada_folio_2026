@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { ProjectCard } from "../components/ProjectCard";
 import { projects } from "../data/projects";
 import { motion } from "motion/react";
 import { HeroSlideshow } from "../components/HeroSlideshow";
 
 export function Home() {
-  const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState<string>("すべて");
 
   const scrollToFilters = () => {
@@ -27,21 +25,25 @@ export function Home() {
     scrollToFilters();
   };
 
-  // ProjectDetail から戻ってきたときに、フィルターボタン行が画面トップに来るようスクロール
+  // ProjectDetail から戻ってきたときに、前回のスクロール位置に戻す
   useEffect(() => {
-    const state = location.state as { scrollTo?: string } | null;
-    if (state?.scrollTo === "works") {
-      scrollToFilters();
+    const saved = sessionStorage.getItem("homeScrollY");
+    if (saved) {
+      const y = Number(saved);
+      if (!Number.isNaN(y)) {
+        window.scrollTo({ top: y, behavior: "auto" });
+      }
+      sessionStorage.removeItem("homeScrollY");
     }
-  }, [location]);
+  }, []);
 
   // カテゴリーのリストを固定
   const categories = [
     "すべて",
+    "プロジェクト",
     "プロダクト",
     "グラフィック",
     "ロゴ",
-    "プロジェクト",
     "ブック",
     "その他",
   ];

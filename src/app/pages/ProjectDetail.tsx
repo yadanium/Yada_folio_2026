@@ -31,7 +31,6 @@ export function ProjectDetail() {
     >
       <Link
         to="/"
-        state={{ scrollTo: "works" }}
         className="inline-flex items-center gap-2 text-gray-600 hover:text-[#0BA29A] mb-8 transition-colors"
       >
         <ArrowLeft className="w-4 h-4" />

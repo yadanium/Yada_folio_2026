@@ -9,6 +9,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Link
       to={`/project/${project.id}`}
+      onClick={() => {
+        sessionStorage.setItem("homeScrollY", String(window.scrollY));
+      }}
       className="group block overflow-hidden bg-white"
     >
       <div className="aspect-square overflow-hidden bg-gray-100">

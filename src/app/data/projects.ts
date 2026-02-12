@@ -78,7 +78,7 @@ export const projects: Project[] = [
   {
     id: "6",
     title: "Product Essence",
-    category: "その他",
+    category: "プロダクト",
     image: "/images/projects/project-6-main.jpg",
     description: "ミニマルなプロダクト写真撮影。商品の本質を引き出し、シンプルで美しいビジュアルで表現しました。ブランドの価値を最大限に伝える作品です。",
     client: "Lifestyle Brand",
