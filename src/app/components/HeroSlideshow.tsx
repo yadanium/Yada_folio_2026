@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
 const images = [
-  "/images/hero2.jpg",
-  "/images/hero3.jpg",
-  "/images/hero4.jpg",
-  "/images/hero5.jpg",
-  "/images/hero6.jpg",
+  "/images/hero/hero2.jpg",
+  "/images/hero/hero3.jpg",
+  "/images/hero/hero4.jpg",
+  "/images/hero/hero5.jpg",
+  "/images/hero/hero6.jpg",
 ];
 
 export function HeroSlideshow() {

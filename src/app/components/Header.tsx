@@ -6,7 +6,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="inline-block">
-            <img src="/images/logo.png" alt="Yada folio" className="h-8" />
+            <img src="/images/common/logo.png" alt="Yada folio" className="h-8" />
           </Link>
           
           <nav>
