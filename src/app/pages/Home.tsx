@@ -23,6 +23,11 @@ export function Home() {
       ? projects
       : projects.filter((p) => p.category === selectedCategory);
 
+  // 制作年順（新しい順）にソート
+  const sortedProjects = [...filteredProjects].sort(
+    (a, b) => Number(b.year) - Number(a.year)
+  );
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -51,9 +56,9 @@ export function Home() {
           ))}
         </div>
 
-        {/* プロジェクトグリッド */}
+        {/* プロジェクトグリッド（制作年順） */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {filteredProjects.map((project, index) => (
+          {sortedProjects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 20 }}

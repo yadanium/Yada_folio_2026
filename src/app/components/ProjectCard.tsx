@@ -20,7 +20,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </div>
       <div className="mt-4">
         <p className="text-sm text-[#0BA29A]">{project.category}</p>
-        <h3 className="mt-1 text-lg">{project.title}</h3>
+        <div className="mt-1 flex items-baseline justify-between gap-2">
+          <h3 className="text-lg">{project.title}</h3>
+          <span className="text-sm text-gray-400">{project.year}</span>
+        </div>
       </div>
     </Link>
   );
