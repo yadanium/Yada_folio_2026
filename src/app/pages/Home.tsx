@@ -3,6 +3,7 @@ import { ProjectCard } from "../components/ProjectCard";
 import { projects } from "../data/projects";
 import { motion } from "motion/react";
 import { HeroSlideshow } from "../components/HeroSlideshow";
+import { ScrollToTopButton } from "../components/ScrollToTopButton";
 
 export function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string>("すべて");
@@ -104,6 +105,8 @@ export function Home() {
           ))}
         </div>
       </div>
+
+      <ScrollToTopButton />
     </motion.div>
   );
 }

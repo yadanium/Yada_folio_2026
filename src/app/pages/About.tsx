@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "motion/react";
+import { ScrollToTopButton } from "../components/ScrollToTopButton";
 
 const headerImage = "/images/common/header2.png";
 const profileImage = "/images/common/profile.png";
@@ -110,6 +111,8 @@ export function About() {
           </div>
         </div>
       </div>
+
+      <ScrollToTopButton />
     </motion.div>
   );
 }
