@@ -2,12 +2,12 @@
   "logo": {
     "path": "/images/logo.png",
     "description": "サイトロゴ",
-    "source": "figma:asset/602ce28af34ba0fa213dea8102c2a1e41bc8b1b2.png"
+    "source": "logo.png"
   },
   "profile": {
     "path": "/images/profile.png",
     "description": "プロフィール写真",
-    "source": "figma:asset/eeef0a9e17178d81c284e91c45b8b4aa319a8ff9.png"
+    "source": "/images/profile.png"
   },
   "about": {
     "header": {
@@ -21,27 +21,27 @@
       {
         "path": "/images/hero/slide-1.jpg",
         "description": "モダンデザインポートフォリオ",
-        "source": "https://images.unsplash.com/photo-1726556267339-b8af2ccbb2f7"
+        "source": "hero2.png"
       },
       {
         "path": "/images/hero/slide-2.jpg",
         "description": "ミニマリスト建築インテリア",
-        "source": "https://images.unsplash.com/photo-1571273033940-89c3e9bb18b0"
+        "source": "hero3.png"
       },
       {
         "path": "/images/hero/slide-3.jpg",
         "description": "コンテンポラリーワークスペース",
-        "source": "https://images.unsplash.com/photo-1703355685639-d558d1b0f63e"
+        "source": "hero4.png"
       },
       {
         "path": "/images/hero/slide-4.jpg",
         "description": "アーティスティックプロダクトデザイン",
-        "source": "https://images.unsplash.com/photo-1744056996022-c33f1cc49030"
+        "source": "hero5.png"
       },
       {
         "path": "/images/hero/slide-5.jpg",
         "description": "クリエイティブスタジオワークスペース",
-        "source": "https://images.unsplash.com/photo-1730206562928-0efd62560435"
+        "source": "hero6.png"
       }
     ]
   },
