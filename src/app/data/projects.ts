@@ -12,8 +12,8 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Modern Architecture",
-    category: "プロダクトデザイン",
+    title: "ぬれ技術",
+    category: "プロジェクト",
     image: "/images/projects/project-1-main.jpg",
     description: "都市の中心部に位置する革新的なオフィスビル。ガラスと鉄骨を組み合わせた現代的なデザインが特徴です。持続可能性と美しさを両立させた建築プロジェクトです。",
     client: "ABC Corporation",
@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
     id: "2",
     title: "Minimalist Interior",
-    category: "グラフィックデザイン",
+    category: "グラフィック",
     image: "/images/projects/project-2-main.jpg",
     description: "シンプルで洗練された空間デザイン。無駄を省き、機能性と美しさを追求したミニマリストのインテリアプロジェクトです。自然光を活かした明るい空間が特徴です。",
     client: "Private Residence",
@@ -41,7 +41,7 @@ export const projects: Project[] = [
   {
     id: "3",
     title: "Abstract Vision",
-    category: "ロゴデザイン",
+    category: "ロゴ",
     image: "/images/projects/project-3-main.jpg",
     description: "色彩と形状の調和を探求した抽象アート作品。鮮やかな色使いと大胆な構図で、見る人に新しい視点を提供します。",
     client: "Gallery Exhibition",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
   {
     id: "4",
     title: "Mountain Escape",
-    category: "ブックデザイン",
+    category: "ブック",
     image: "/images/projects/project-4-main.jpg",
     description: "壮大な自然の風景を捉えた写真シリーズ。山々の美しさと力強さを表現し、自然との調和の大切さを伝える作品です。",
     client: "Nature Magazine",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     id: "5",
     title: "Creative Workspace",
-    category: "グラフィックデザイン",
+    category: "グラフィック",
     image: "/images/projects/project-5-main.jpg",
     description: "クリエイティブな作業環境のブランディングデザイン。色彩理論と視覚的な階層を活用し、インスピレーションを刺激する空間を演出しました。",
     client: "Design Studio",
