@@ -15,23 +15,23 @@ export function HeroSlideshow() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000); // 4秒ごとに切り替え
+    }, 10000); // 10秒ごとに切り替え
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden bg-gray-100">
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <motion.img
           key={currentIndex}
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
           className="absolute inset-0 w-full h-full object-cover"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          initial={{ x: "100%" }}           // 右から
+          animate={{ x: 0 }}                // 中央へ
+          exit={{ x: "-100%" }}             // 左へ流れて退場
+          transition={{ duration: 1.2, ease: "easeInOut" }}
         />
       </AnimatePresence>
 
