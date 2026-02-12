@@ -1,7 +1,7 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "motion/react";
 
-const headerImage = "/images/about-header.jpg";
+const headerImage = "/images/header2.png";
 const profileImage = "/images/profile.png";
 
 export function About() {
