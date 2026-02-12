@@ -11,7 +11,7 @@
   },
   "about": {
     "header": {
-      "path": "/images/about-header.jpg",
+      "path": "/images/header2.png",
       "description": "Aboutページヘッダー画像",
       "source": "https://images.unsplash.com/photo-1600320844678-43cebba1cdfe"
     }
@@ -19,9 +19,8 @@
   "hero": {
     "slides": [
       {
-        "path": "/images/hero/slide-1.jpg",
+        "path": "/images/hero2.jpg",
         "description": "モダンデザインポートフォリオ",
-        "source": "hero2.png"
       },
       {
         "path": "/images/hero/slide-2.jpg",
@@ -48,7 +47,7 @@
   "projects": {
     "project1": {
       "main": {
-        "path": "/images/projects/project-1-main.jpg",
+        "path": "/images/hero2.jpg",
         "description": "Modern Architecture - メイン画像",
         "source": "https://images.unsplash.com/photo-1695067440629-b5e513976100"
       },
