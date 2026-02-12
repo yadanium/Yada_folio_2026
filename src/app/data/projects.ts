@@ -60,6 +60,11 @@ export const projects: Project[] = [
     description: "壮大な自然の風景を捉えた写真シリーズ。山々の美しさと力強さを表現し、自然との調和の大切さを伝える作品です。",
     client: "Nature Magazine",
     year: "2025",
+    detailImages: [
+      "/images/projects/project-3-main.jpg",
+      "/images/projects/project-3-detail-1.jpg",
+      "/images/projects/project-3-detail-2.jpg",
+    ],
   },
   {
     id: "5",

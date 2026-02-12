@@ -1,11 +1,39 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { ProjectCard } from "../components/ProjectCard";
 import { projects } from "../data/projects";
 import { motion } from "motion/react";
 import { HeroSlideshow } from "../components/HeroSlideshow";
 
 export function Home() {
+  const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState<string>("すべて");
+
+  const scrollToFilters = () => {
+    const el = document.getElementById("works-filters");
+    if (!el) return;
+
+    const rect = el.getBoundingClientRect();
+    const absoluteY = rect.top + window.scrollY;
+
+    window.scrollTo({
+      top: absoluteY,
+      behavior: "smooth",
+    });
+  };
+
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(category);
+    scrollToFilters();
+  };
+
+  // ProjectDetail から戻ってきたときに、フィルターボタン行が画面トップに来るようスクロール
+  useEffect(() => {
+    const state = location.state as { scrollTo?: string } | null;
+    if (state?.scrollTo === "works") {
+      scrollToFilters();
+    }
+  }, [location]);
 
   // カテゴリーのリストを固定
   const categories = [
@@ -41,11 +69,14 @@ export function Home() {
 
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* フィルターボタン */}
-        <div className="flex flex-wrap gap-4 mb-12">
+        <div
+          id="works-filters"
+          className="flex flex-wrap gap-4 mb-12"
+        >
           {categories.map((category) => (
             <button
               key={category}
-              onClick={() => setSelectedCategory(category)}
+              onClick={() => handleCategoryClick(category)}
               className={`px-6 py-2 rounded-full transition-colors ${
                 selectedCategory === category
                   ? "bg-[#0BA29A] text-white"
