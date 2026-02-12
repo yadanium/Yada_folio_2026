@@ -84,4 +84,13 @@ export const projects: Project[] = [
     client: "Lifestyle Brand",
     year: "2025",
   },
+  {
+    id: "7",
+    title: "Flexible Concept",
+    category: "その他",
+    image: "/images/projects/project-5-main.jpg",
+    description: "カテゴリに縛られないコンセプトデザイン。プロダクト・グラフィック・空間など複数領域を横断しながら、ブランドの世界観を柔軟に表現したプロジェクトです。",
+    client: "Creative Client",
+    year: "2023",
+  },
 ];
