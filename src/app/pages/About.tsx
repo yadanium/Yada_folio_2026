@@ -42,31 +42,45 @@ export function About() {
           <div className="md:w-2/3 space-y-4 text-gray-700 leading-relaxed">
             <br/>
             <h2 className="text-2xl mb-4">矢田 美涼 / Yada Misuzu</h2>
-            <p>
-              千葉工業大学 創造工学部 デザイン科学科卒業。<br/>
-              慶應義塾大学大学院 政策・メディア研究科 XDプログラム在学中。<br/>
-              在学中にヤダニウムとして個人事業主を開業。
-            </p>  
+        
             <p>
             「技術と人をつなぐデザイン」をモットーに、個人開発を行うエンジニアの<br/>
             方々とともにモノづくりに取り組んでいます。
             </p>
             <p>
-            
+            「アイデアや技術を魅力的に伝えたい」「手に取りたいと思ってもらえるクオリティにしたい」<br/>
+            その"あと一歩"をサポートするため、丁寧な対話を重ねながら細部まで磨き上げます。
+            </p>
+            <p>
+            開発者の想いが届くように。プロダクトを自信を持って世に送り出せるように。<br/>
+            共に考え、伴走する存在でありたいと考えています
             </p>
           </div>
         </div>
-      
+
+        {/* 略歴セクション */}
+        <div className="mb-12">
+          <h2 className="text-2xl mb-6 flex items-center gap-3">
+            <span className="w-1 h-6 bg-[#0BA29A]"></span>
+            略歴
+          </h2>
+          <ul className="space-y-3 text-gray-700 leading-relaxed">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0BA29A] mt-2.5 shrink-0"></span>
+              <span>千葉工業大学 創造工学部 デザイン科学科卒業。</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0BA29A] mt-2.5 shrink-0"></span>
+              <span>慶應義塾大学大学院 政策・メディア研究科 XDプログラム在学中。</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0BA29A] mt-2.5 shrink-0"></span>
+              <span>在学中にヤダニウムとして個人事業主を開業。</span>
+            </li>
+          </ul>
+        </div>
+
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <p>
-          「アイデアや技術を魅力的に伝えたい」「手に取りたいと思ってもらえるクオリティにしたい」<br/>
-          その“あと一歩”をサポートするため、丁寧な対話を重ねながら細部まで磨き上げます。<br/>
-          <br/>
-          開発者の想いが届くように。プロダクトを自信を持って世に送り出せるように。<br/>
-          共に考え、伴走する存在でありたいと考えています<br/>
-          </p>
-        
-          
           <div className="pt-8 border-t border-gray-200">
             <h2 className="text-2xl mb-4 flex items-center gap-3 mt-8">
               <span className="w-1 h-6 bg-[#0BA29A]"></span>
