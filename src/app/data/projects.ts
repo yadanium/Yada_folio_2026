@@ -93,4 +93,18 @@ export const projects: Project[] = [
     client: "Creative Client",
     year: "2023",
   },
+  {
+    id: "8",
+    title: "たまごころ",
+    category: "プロジェクト",
+    image: "/images/projects/project/project (2).png",
+    description: "「たまごころ」は、卵の温もりと心の優しさをテーマにしたブランディングプロジェクトです。丸みのあるフォルムと柔らかな色彩で、安心感と親しみやすさを表現しました。",
+    client: "たまごころ",
+    year: "2025",
+    detailImages: [
+      "/images/projects/project/project (2).png",
+      "/images/projects/project/project (3).png",
+      "/images/projects/project/project (5).png",
+    ],
+  },
 ];

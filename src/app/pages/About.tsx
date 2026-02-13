@@ -44,15 +44,15 @@ export function About() {
             <h2 className="text-2xl mb-4 font-bold">矢田 美涼 / Yada Misuzu</h2>
           <br/>
             <p>
-            「技術と人をつなぐデザイン」をモットーに、主に個人開発を行うエンジニアの方々<br/>
+            「技術と人をつなぐデザイン」をモットーに、主に個人開発を行うエンジニアの方々
             とともにモノづくりに取り組んでいます。
             </p>
             <p>
-            「アイデアや技術を魅力的に伝えたい」、「手に取りたいと思ってもらえるクオリティにしたい」<br/>
+            「アイデアや技術を魅力的に伝えたい」、「手に取りたいと思ってもらえるクオリティにしたい」、
             その"あと一歩"をサポートするため、丁寧な対話を重ねながら細部まで磨き上げます。
             </p>
             <p>
-            開発者の想いが届くように、プロダクトを自信を持って世に送り出せるように、<br/>
+            開発者の想いが届くように、プロダクトを自信を持って世に送り出せるように、
             共に考え、伴走する存在でありたいと考えています。
             </p>
           </div>
@@ -68,19 +68,19 @@ export function About() {
             {/* 最初のドット中心から最後のドット中心までの縦線 */}
             <span
               className="absolute w-0.5 bg-[#0BA29A]"
-              style={{ left: "4px", top: "13px", bottom: "19px" }}
+              style={{ left: "4px", top: "13px", bottom: "13px" }}
             ></span>
             <li className="flex gap-3 relative">
               <span className="w-2.5 h-2.5 rounded-full bg-[#0BA29A] mt-2 shrink-0 z-10"></span>
-              <span className="pb-5 pt-1.5">千葉工業大学 創造工学部 デザイン科学科卒業</span>
+              <span className="pb-5">千葉工業大学 創造工学部 デザイン科学科卒業</span>
             </li>
             <li className="flex gap-3 relative">
               <span className="w-2.5 h-2.5 rounded-full bg-[#0BA29A] mt-2 shrink-0 z-10"></span>
-              <span className="pb-5 pt-1.5">慶應義塾大学大学院 政策・メディア研究科 XDプログラム在学中</span>
+              <span className="pb-5">慶應義塾大学大学院 政策・メディア研究科 XDプログラム在学中</span>
             </li>
             <li className="flex gap-3 relative">
               <span className="w-2.5 h-2.5 rounded-full bg-[#0BA29A] mt-2 shrink-0 z-10"></span>
-              <span className="pt-1.5">在学中にヤダニウムとして個人事業主を開業</span>
+              <span>在学中にヤダニウムとして個人事業主を開業</span>
             </li>
           </ul>
         </div>
@@ -91,7 +91,7 @@ export function About() {
               <span className="w-1 h-6 bg-[#0BA29A]"></span>
               サービス
             </h2>
-            <ul className="space-y-2">
+            <ul className="space-y-2 font-bold">
               <li>• ロゴデザイン</li>
               <li>• パッケージデザイン</li>
               <li>• プロダクトデザイン</li>
@@ -105,14 +105,14 @@ export function About() {
               <span className="w-1 h-6 bg-[#0BA29A]"></span>
               意匠登録
             </h2>
-            <ul className="space-y-1">
+            <ul className="space-y-1 text-sm">
               <li className="flex items-center gap-2 py-0.5">
                 <span className="text-sm text-gray-500 shrink-0 w-20">2024.1.24</span>
                 <a
                   href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2023-014207/30/ja"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-bold"
+                  className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-normal"
                 >
                   意匠登録1762192号：排泄検知センサパッドカバー
                   <ExternalLink className="w-4 h-4 shrink-0" />
@@ -124,7 +124,7 @@ export function About() {
                   href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2024-000230/30/ja"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-bold"
+                  className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-normal"
                 >
                   意匠登録1781557号：ソリッドステートドライブケース
                   <ExternalLink className="w-4 h-4 shrink-0" />
@@ -138,7 +138,7 @@ export function About() {
               <span className="w-1 h-6 bg-[#0BA29A]"></span>
               受賞歴
             </h2>
-            <ul className="space-y-1">
+            <ul className="space-y-1 text-sm">
               <li className="flex items-center gap-2 py-0.5">
                 <span className="text-sm text-gray-500 shrink-0 w-20">2024.10.16</span>
                 <span>株式会社aba「Helppad2」(印字デザイン担当) 2024グッドデザイン賞 </span>
@@ -167,7 +167,7 @@ export function About() {
               <span className="w-1 h-6 bg-[#0BA29A]"></span>
               メディア
             </h2>
-            <ul className="space-y-1">
+            <ul className="space-y-1 text-sm">
               {mediaItems.map((item, index) => (
                 <li key={index} className="flex items-center gap-2 py-0.5">
                   <span className="text-sm text-gray-500 shrink-0 w-20">{item.date}</span>
@@ -175,7 +175,7 @@ export function About() {
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-bold"
+                    className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-normal"
                   >
                     {item.title}
                     <ExternalLink className="w-4 h-4 shrink-0" />
