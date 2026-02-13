@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Home } from "./pages/Home";
 import { ProjectDetail } from "./pages/ProjectDetail";
@@ -6,7 +6,7 @@ import { About } from "./pages/About";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen bg-white">
         <Header />
         <Routes>
@@ -15,6 +15,6 @@ export default function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
