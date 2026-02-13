@@ -121,19 +121,23 @@ export function About() {
             <ul className="space-y-4">
               <li className="flex items-center gap-2 py-2">
                 <span className="text-sm text-gray-500 shrink-0">2024.10.16</span>
-                <span>Good Design Award 2024 株式会社aba「Helppad2」（印字デザイン担当）</span>
+                <span>株式会社aba「Helppad２」2024グッドデザイン賞 （印字デザイン担当）</span>
               </li>
               <li className="flex items-center gap-2 py-2">
-                <span className="text-sm text-gray-500 shrink-0">2024.10.16</span>
-                <span>Good Design Award 2024 株式会社aba「Helppad2」（印字デザイン担当）</span>
+                <span className="text-sm text-gray-500 shrink-0">2024.3.23</span>
+                <span>千葉工業大学 創造工学部 デザイン科学科 卒業制作 最優秀賞</span>
               </li>
               <li className="flex items-center gap-2 py-2">
-                <span className="text-sm text-gray-500 shrink-0">2024.10.16</span>
-                <span>Good Design Award 2024 株式会社aba「Helppad2」（印字デザイン担当）</span>
+                <span className="text-sm text-gray-500 shrink-0">2024.3.18</span>
+                <span>特許庁、文部科学省、日本弁理士会、独立行政法人工業所有権情報・研修館主催 デザインパテントコンテスト 優秀賞</span>
               </li>
               <li className="flex items-center gap-2 py-2">
-                <span className="text-sm text-gray-500 shrink-0">2024.10.16</span>
-                <span>Good Design Award 2024 株式会社aba「Helppad2」（印字デザイン担当）</span>
+                <span className="text-sm text-gray-500 shrink-0">2023.12.27</span>
+                <span>株式会社協同工芸社主催 看板おしゃれデザインコンペ2023 優秀賞</span>
+              </li>
+              <li className="flex items-center gap-2 py-2">
+                <span className="text-sm text-gray-500 shrink-0">2023.4.3</span>
+                <span>公益財団法人千葉市産業振興財団主催 千葉市元気企業ロゴマーク作品募集 優秀賞</span>
               </li>
             </ul>
           </div>
