@@ -12,12 +12,12 @@ export function Header() {
           <nav>
             <ul className="flex gap-8">
               <li>
-                <Link to="/" className="text-gray-700 hover:text-[#0BA29A] transition-colors">
+                <Link to="/" className="text-gray-700 hover:text-[#0BA29A] transition-colors font-bold">
                   Works
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-700 hover:text-[#0BA29A] transition-colors">
+                <Link to="/about" className="text-gray-700 hover:text-[#0BA29A] transition-colors font-bold">
                   About
                 </Link>
               </li>

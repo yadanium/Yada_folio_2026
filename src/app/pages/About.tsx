@@ -25,7 +25,7 @@ export function About() {
       </div>
 
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-4xl mb-8 flex items-center gap-3">
+        <h1 className="text-4xl mb-8 flex items-center gap-3 font-bold">
           <span className="w-1 h-8 bg-[#0BA29A]"></span>
           About me
         </h1>
@@ -41,7 +41,7 @@ export function About() {
           </div>
           <div className="md:w-2/3 space-y-4 text-sm text-gray-700 leading-relaxed">
             <br/>
-            <h2 className="text-2xl mb-4">矢田 美涼 / Yada Misuzu</h2>
+            <h2 className="text-2xl mb-4 font-bold">矢田 美涼 / Yada Misuzu</h2>
           <br/>
             <p>
             「技術と人をつなぐデザイン」をモットーに、主に個人開発を行うエンジニアの方々<br/>
@@ -112,7 +112,7 @@ export function About() {
                   href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2023-014207/30/ja"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-medium"
+                  className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-bold"
                 >
                   意匠登録1762192号：排泄検知センサパッドカバー
                   <ExternalLink className="w-4 h-4 shrink-0" />
@@ -124,7 +124,7 @@ export function About() {
                   href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2024-000230/30/ja"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-medium"
+                  className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-bold"
                 >
                   意匠登録1781557号：ソリッドステートドライブケース
                   <ExternalLink className="w-4 h-4 shrink-0" />
@@ -175,7 +175,7 @@ export function About() {
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-medium"
+                    className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-bold"
                   >
                     {item.title}
                     <ExternalLink className="w-4 h-4 shrink-0" />

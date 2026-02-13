@@ -43,8 +43,8 @@ export function ProjectDetail() {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="mb-8"
       >
-        <p className="text-sm text-[#0BA29A] mb-2">{project.category}</p>
-        <h1 className="text-4xl mb-4">{project.title}</h1>
+        <p className="text-sm text-[#0BA29A] mb-2 font-bold">{project.category}</p>
+        <h1 className="text-4xl mb-4 font-bold">{project.title}</h1>
         
         <div className="flex gap-8 text-sm">
           <div>
