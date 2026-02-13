@@ -34,12 +34,16 @@
   // 📅 年度: プロジェクトを実施した年
   year: "2026",
 
-  // 🎨 詳細画像（オプション）: 詳細ページに表示する追加画像
-  // 不要な場合はこの行を削除してOK
-  detailImages: [
-    "https://images.unsplash.com/photo-xxx1...",
-    "https://images.unsplash.com/photo-xxx2...",
-    "https://images.unsplash.com/photo-xxx3...",
+  // 🎨 コンテンツ: 詳細ページに表示する画像とテキストの配列（ブログ形式）
+  // type: "image" → 画像ブロック（src に画像パスを指定）
+  // type: "text"  → テキストブロック（body にテキストを指定）
+  // 自由な順番で並べられます
+  content: [
+    { type: "image", src: "https://images.unsplash.com/photo-xxx1..." },
+    { type: "text", body: "画像の説明やコメントをここに書きます。" },
+    { type: "image", src: "https://images.unsplash.com/photo-xxx2..." },
+    { type: "text", body: "次の画像についての説明文。" },
+    { type: "image", src: "https://images.unsplash.com/photo-xxx3..." },
   ],
 }
 
@@ -47,7 +51,7 @@
 // 実際の使用例
 // ============================================
 
-// 例1: 詳細画像なし（シンプル）
+// 例1: シンプル（画像1枚 + テキスト）
 {
   id: "7",
   title: "Urban Redesign",
@@ -56,21 +60,27 @@
   description: "都市の中心部に位置する革新的なオフィスビル。ガラスと鉄骨を組み合わせた現代的なデザインが特徴です。",
   client: "Tokyo City Hall",
   year: "2026",
+  content: [
+    { type: "image", src: "https://images.unsplash.com/photo-1695067440629-b5e513976100?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" },
+    { type: "text", body: "都市の中心部に位置する革新的なオフィスビル。ガラスと鉄骨を組み合わせた現代的なデザインが特徴です。" },
+  ],
 }
 
-// 例2: 詳細画像あり（フル機能）
+// 例2: ブログ形式（画像とテキストを交互に配置）
 {
   id: "8",
   title: "Brand Identity Design",
   category: "グラフィックデザイン",
   image: "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  description: "スタートアップ企業のブランドアイデンティティを一から構築。ロゴ、カラーパレット、タイポグラフィ、名刺、Webサイトなど、すべてのビジュアル要素を統一感のあるデザインで提供しました。",
+  description: "スタートアップ企業のブランドアイデンティティを一から構築。",
   client: "Tech Startup Inc.",
   year: "2025",
-  detailImages: [
-    "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    "https://images.unsplash.com/photo-1705254613735-1abb457f8a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    "https://images.unsplash.com/photo-1600320844678-43cebba1cdfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  content: [
+    { type: "image", src: "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" },
+    { type: "text", body: "ロゴ、カラーパレット、タイポグラフィを統一感のあるデザインで提供しました。" },
+    { type: "image", src: "https://images.unsplash.com/photo-1705254613735-1abb457f8a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" },
+    { type: "text", body: "名刺やWebサイトなど、すべてのビジュアル要素にブランドを反映しています。" },
+    { type: "image", src: "https://images.unsplash.com/photo-1600320844678-43cebba1cdfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" },
   ],
 }
 

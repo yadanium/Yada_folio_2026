@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
 import { ArrowLeft } from "lucide-react";
@@ -6,6 +7,10 @@ import { motion } from "motion/react";
 export function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
   const project = projects.find((p) => p.id === id);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (!project) {
     return (
@@ -17,9 +22,6 @@ export function ProjectDetail() {
       </div>
     );
   }
-
-  // 詳細画像がある場合はそれを使用、なければメイン画像のみ
-  const images = project.detailImages || [project.image];
 
   return (
     <motion.div
@@ -56,35 +58,33 @@ export function ProjectDetail() {
             <p className="mt-1">{project.year}</p>
           </div>
         </div>
+
+        <p className="text-gray-700 leading-relaxed mt-6">{project.description}</p>
       </motion.div>
 
-      {/* 画像ギャラリー */}
+      {/* ブログ形式: 画像とテキストを交互に表示 */}
       <div className="space-y-8 mb-12">
-        {images.map((image, index) => (
+        {project.content.map((block, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-            className="w-full"
+            transition={{ duration: 0.6, delay: 0.2 + index * 0.08 }}
           >
-            <img
-              src={image}
-              alt={`${project.title} - ${index + 1}`}
-              className="w-full h-auto"
-            />
+            {block.type === "image" ? (
+              <img
+                src={block.src}
+                alt={`${project.title} - ${index + 1}`}
+                className="w-full h-auto"
+              />
+            ) : (
+              <p className="text-gray-700 leading-relaxed text-base px-2">
+                {block.body}
+              </p>
+            )}
           </motion.div>
         ))}
       </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className="prose max-w-none"
-      >
-        <p className="text-gray-700 leading-relaxed">{project.description}</p>
-      </motion.div>
     </motion.div>
   );
 }
