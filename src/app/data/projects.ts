@@ -16,11 +16,11 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "ぬれ技術",
+    title: "ぬれ技術 Wet technology",
     category: "プロジェクト",
     image: "/images/projects/project/project (1).png",
     description: "都市の中心部に位置する革新的なオフィスビル。ガラスと鉄骨を組み合わせた現代的なデザインが特徴です。持続可能性と美しさを両立させた建築プロジェクトです。",
-    client: "ABC Corporation",
+    client: "卒業制作",
     year: "2024",
     content: [
       { type: "image", src: "/images/projects/project-1-main.jpg" },
@@ -48,9 +48,9 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    title: "Abstract Vision",
+    title: "Strecs3D ロゴデザイン",
     category: "ロゴ",
-    image: "/images/projects/project-3-main.jpg",
+    image: "/images/projects/logo/logo (4).png",
     description: "色彩と形状の調和を探求した抽象アート作品。鮮やかな色使いと大胆な構図で、見る人に新しい視点を提供します。",
     client: "Gallery Exhibition",
     year: "2024",
@@ -93,14 +93,14 @@ export const projects: Project[] = [
   },
   {
     id: "6",
-    title: "Product Essence",
+    title: "Spin-MRI",
     category: "プロダクト",
-    image: "/images/projects/project-6-main.jpg",
+    image: "/images/projects/product/product (1).jpg",
     description: "ミニマルなプロダクト写真撮影。商品の本質を引き出し、シンプルで美しいビジュアルで表現しました。ブランドの価値を最大限に伝える作品です。",
     client: "Lifestyle Brand",
     year: "2025",
     content: [
-      { type: "image", src: "/images/projects/project-6-main.jpg" },
+      { type: "image", src: "/images/projects/product/product (7).jpg" },
       { type: "text", body: "ミニマルなプロダクト写真撮影。商品の本質を引き出し、シンプルで美しいビジュアルで表現しました。ブランドの価値を最大限に伝える作品です。" },
     ],
   },
@@ -115,6 +115,22 @@ export const projects: Project[] = [
     content: [
       { type: "image", src: "/images/projects/project-5-main.jpg" },
       { type: "text", body: "カテゴリに縛られないコンセプトデザイン。プロダクト・グラフィック・空間など複数領域を横断しながら、ブランドの世界観を柔軟に表現したプロジェクトです。" },
+    ],
+  },
+  {
+    id: "9",
+    title: "SOUZ",
+    category: "ロゴ",
+    image: "/images/projects/logo/logo (1).png",
+    description: "SOUZのブランドアイデンティティを象徴するロゴデザイン。シンプルかつ力強い造形で、ブランドの本質を視覚的に表現しました。",
+    client: "SOUZ",
+    year: "2025",
+    content: [
+      { type: "image", src: "/images/projects/logo/logo (1).png" },
+      { type: "text", body: "ブランドの核となるロゴマークのデザインプロセス。" },
+      { type: "image", src: "/images/projects/logo/logo (2).png" },
+      { type: "text", body: "シンプルな造形の中に、ブランドの理念と世界観を凝縮しました。" },
+      { type: "image", src: "/images/projects/logo/logo (3).png" },
     ],
   },
   {

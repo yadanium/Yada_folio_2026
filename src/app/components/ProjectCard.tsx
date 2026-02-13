@@ -12,7 +12,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       onClick={() => {
         sessionStorage.setItem("homeScrollY", String(window.scrollY));
       }}
-      className="group block overflow-hidden bg-white"
+      className="group block overflow-hidden bg-transparent"
     >
       <div className="aspect-square overflow-hidden bg-gray-100">
         <img
