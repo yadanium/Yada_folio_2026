@@ -44,16 +44,16 @@ export function About() {
             <h2 className="text-2xl mb-4">矢田 美涼 / Yada Misuzu</h2>
         
             <p>
-            「技術と人をつなぐデザイン」をモットーに、個人開発を行うエンジニアの<br/>
-            方々とともにモノづくりに取り組んでいます。
+            「技術と人をつなぐデザイン」をモットーに、主に個人開発を行うエンジニアの方々<br/>
+            とともにモノづくりに取り組んでいます。
             </p>
             <p>
             「アイデアや技術を魅力的に伝えたい」「手に取りたいと思ってもらえるクオリティにしたい」<br/>
             その"あと一歩"をサポートするため、丁寧な対話を重ねながら細部まで磨き上げます。
             </p>
             <p>
-            開発者の想いが届くように。プロダクトを自信を持って世に送り出せるように。<br/>
-            共に考え、伴走する存在でありたいと考えています
+            開発者の想いが届くように、プロダクトを自信を持って世に送り出せるように、<br/>
+            共に考え、伴走する存在でありたいと考えています。
             </p>
           </div>
         </div>
@@ -67,22 +67,22 @@ export function About() {
           <ul className="space-y-3 text-gray-700 leading-relaxed">
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#0BA29A] mt-2.5 shrink-0"></span>
-              <span>千葉工業大学 創造工学部 デザイン科学科卒業。</span>
+              <span>千葉工業大学 創造工学部 デザイン科学科卒業</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#0BA29A] mt-2.5 shrink-0"></span>
-              <span>慶應義塾大学大学院 政策・メディア研究科 XDプログラム在学中。</span>
+              <span>慶應義塾大学大学院 政策・メディア研究科 XDプログラム在学中</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#0BA29A] mt-2.5 shrink-0"></span>
-              <span>在学中にヤダニウムとして個人事業主を開業。</span>
+              <span>在学中にヤダニウムとして個人事業主を開業</span>
             </li>
           </ul>
         </div>
 
-        <div className="space-y-6 text-gray-700 leading-relaxed">
-          <div className="pt-8 border-t border-gray-200">
-            <h2 className="text-2xl mb-4 flex items-center gap-3 mt-8">
+        <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="pt-6 border-t border-gray-200">
+            <h2 className="text-2xl mb-4 flex items-center gap-3 mt-4">
               <span className="w-1 h-6 bg-[#0BA29A]"></span>
               サービス
             </h2>
@@ -95,13 +95,13 @@ export function About() {
             </ul>
           </div>
           
-          <div className="pt-8 border-t border-gray-200">
-            <h2 className="text-2xl mb-4 flex items-center gap-3 mt-8">
+          <div className="pt-6 border-t border-gray-200">
+            <h2 className="text-2xl mb-4 flex items-center gap-3 mt-4">
               <span className="w-1 h-6 bg-[#0BA29A]"></span>
               意匠登録
             </h2>
-            <ul className="space-y-4">
-              <li className="flex items-center gap-2 py-2">
+            <ul className="space-y-1">
+              <li className="flex items-center gap-2 py-0.5">
                 <span className="text-sm text-gray-500 shrink-0">2024.1.24</span>
                 <a
                   href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2023-014207/30/ja"
@@ -113,7 +113,7 @@ export function About() {
                   <ExternalLink className="w-4 h-4 shrink-0" />
                 </a>
               </li>
-              <li className="flex items-center gap-2 py-2">
+              <li className="flex items-center gap-2 py-0.5">
                 <span className="text-sm text-gray-500 shrink-0">2024.10.7</span>
                 <a
                   href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2024-000230/30/ja"
@@ -133,38 +133,38 @@ export function About() {
               <span className="w-1 h-6 bg-[#0BA29A]"></span>
               受賞歴
             </h2>
-            <ul className="space-y-4">
-              <li className="flex items-center gap-2 py-2">
+            <ul className="space-y-1">
+              <li className="flex items-center gap-2 py-0.5">
                 <span className="text-sm text-gray-500 shrink-0">2024.10.16</span>
-                <span>株式会社aba「Helppad２」2024グッドデザイン賞 （印字デザイン担当）</span>
+                <span>株式会社aba「Helppad2」(印字デザイン担当) 2024グッドデザイン賞 </span>
               </li>
-              <li className="flex items-center gap-2 py-2">
+              <li className="flex items-center gap-2 py-0.5">
                 <span className="text-sm text-gray-500 shrink-0">2024.3.23</span>
                 <span>千葉工業大学 創造工学部 デザイン科学科 卒業制作 最優秀賞</span>
               </li>
-              <li className="flex items-center gap-2 py-2">
+              <li className="flex items-center gap-2 py-0.5">
                 <span className="text-sm text-gray-500 shrink-0">2024.3.18</span>
                 <span>特許庁、文部科学省、日本弁理士会、独立行政法人工業所有権情報・研修館主催 デザインパテントコンテスト 優秀賞</span>
               </li>
-              <li className="flex items-center gap-2 py-2">
+              <li className="flex items-center gap-2 py-0.5">
                 <span className="text-sm text-gray-500 shrink-0">2023.12.27</span>
                 <span>株式会社協同工芸社主催 看板おしゃれデザインコンペ2023 優秀賞</span>
               </li>
-              <li className="flex items-center gap-2 py-2">
+              <li className="flex items-center gap-2 py-0.5">
                 <span className="text-sm text-gray-500 shrink-0">2023.4.3</span>
                 <span>公益財団法人千葉市産業振興財団主催 千葉市元気企業ロゴマーク作品募集 優秀賞</span>
               </li>
             </ul>
           </div>
 
-          <div className="pt-8 border-t border-gray-200">
-            <h2 className="text-2xl mb-4 flex items-center gap-3 mt-8">
+          <div className="pt-6 border-t border-gray-200">
+            <h2 className="text-2xl mb-4 flex items-center gap-3 mt-4">
               <span className="w-1 h-6 bg-[#0BA29A]"></span>
               メディア
             </h2>
-            <ul className="space-y-4">
+            <ul className="space-y-1">
               {mediaItems.map((item, index) => (
-                <li key={index} className="flex items-center gap-2 py-2">
+                <li key={index} className="flex items-center gap-2 py-0.5">
                   <span className="text-sm text-gray-500 shrink-0">{item.date}</span>
                   <a
                     href={item.url}
@@ -183,8 +183,8 @@ export function About() {
             )}
           </div>
 
-          <div className="pt-8 border-t border-gray-200">
-            <h2 className="text-2xl mb-6 flex items-center gap-3 mt-8">
+          <div className="pt-6 border-t border-gray-200">
+            <h2 className="text-2xl mb-6 flex items-center gap-3 mt-4">
               <span className="w-1 h-6 bg-[#0BA29A]"></span>
               Contact
             </h2>
