@@ -56,9 +56,9 @@ export function Home() {
       ? projects
       : projects.filter((p) => p.category.includes(selectedCategory));
 
-  // 制作年順（新しい順）にソート
+  // 制作年順（新しい順）→ 同年内は priority 昇順にソート
   const sortedProjects = [...filteredProjects].sort(
-    (a, b) => Number(b.year) - Number(a.year)
+    (a, b) => Number(b.year) - Number(a.year) || a.priority - b.priority
   );
 
   return (
