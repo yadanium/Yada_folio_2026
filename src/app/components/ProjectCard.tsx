@@ -22,7 +22,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         />
       </div>
       <div className="mt-4">
-        <p className="text-sm text-[#0BA29A]">{project.category}</p>
+        <p className="text-sm text-[#0BA29A]">{project.category.join(" / ")}</p>
         <div className="mt-1 flex items-baseline justify-between gap-2">
           <h3 className="text-lg">{project.title}</h3>
           <span className="text-sm text-gray-400">{project.year}</span>

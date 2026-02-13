@@ -54,7 +54,7 @@ export function Home() {
   const filteredProjects =
     selectedCategory === "すべて"
       ? projects
-      : projects.filter((p) => p.category === selectedCategory);
+      : projects.filter((p) => p.category.includes(selectedCategory));
 
   // 制作年順（新しい順）にソート
   const sortedProjects = [...filteredProjects].sort(
