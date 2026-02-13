@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
 const images = [
@@ -11,8 +11,11 @@ const images = [
 
 export function HeroSlideshow() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const hasMounted = useRef(false);
 
   useEffect(() => {
+    hasMounted.current = true;
+
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 10000); // 10秒ごとに切り替え
@@ -28,7 +31,7 @@ export function HeroSlideshow() {
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
           className="absolute inset-0 w-full h-full object-cover"
-          initial={{ x: "100%" }}           // 右から
+          initial={hasMounted.current ? { x: "100%" } : { x: 0 }} // 初回のみアニメーションなし
           animate={{ x: 0 }}                // 中央へ
           exit={{ x: "-100%" }}             // 左へ流れて退場
           transition={{ duration: 1.2, ease: "easeInOut" }}
