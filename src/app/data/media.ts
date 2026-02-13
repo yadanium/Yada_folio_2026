@@ -6,6 +6,11 @@ export interface MediaItem {
 
 export const mediaItems: MediaItem[] = [
   {
+    date: "2026.2.6",
+    title: "東北大学工学部 一般財団法人青葉工学振興会 『翠巒』第40号",
+    url: "https://www.aoba-found.or.jp/suiran/40/HTML5/pc.html#/page/18",
+  },
+  {
     date: "2025.8.17",
     title: "siro Inc.  Shinya Matsuyama note 「量子センサーとインタラクティブ」",
     url: "https://note.com/gff02521/n/n16f3aae4f1ab",
