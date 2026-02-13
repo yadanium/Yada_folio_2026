@@ -16,16 +16,12 @@ export function About() {
       transition={{ duration: 0.5 }}
     >
       {/* ヘッダー画像 */}
-      <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden bg-gray-100">
+      <div className="w-full h-[300px] md:h-[400px] overflow-hidden bg-gray-100">
         <img
           src={headerImage}
           alt="About header"
           className="w-full h-full object-cover"
         />
-        {/* クレジット */}
-        <div className="absolute bottom-4 right-4 text-white text-sm">
-          <p className="text-white drop-shadow-lg">Photo by Waarrk, tueks</p>
-        </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-6 py-12">

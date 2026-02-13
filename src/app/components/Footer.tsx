@@ -5,6 +5,9 @@ export function Footer() {
         <p className="text-center text-sm">
           © {new Date().getFullYear()} Yada folio. All rights reserved.
         </p>
+        <p className="text-center text-sm text-white/90 mt-2">
+          Photo by waarrk, tueks
+        </p>
       </div>
     </footer>
   );
