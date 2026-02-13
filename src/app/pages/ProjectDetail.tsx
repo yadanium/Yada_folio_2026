@@ -78,6 +78,16 @@ export function ProjectDetail() {
                 alt={`${project.title} - ${index + 1}`}
                 className="w-full h-auto"
               />
+            ) : block.type === "youtube" ? (
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src={`https://www.youtube.com/embed/${block.videoId}`}
+                  title={`${project.title} - YouTube`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
             ) : (
               <p className="text-gray-700 leading-relaxed text-base px-2">
                 {block.body}

@@ -1,6 +1,7 @@
 export type ContentBlock =
   | { type: "image"; src: string }
-  | { type: "text"; body: string };
+  | { type: "text"; body: string }
+  | { type: "youtube"; videoId: string };
 
 export interface Project {
   id: string;
@@ -173,8 +174,78 @@ export const projects: Project[] = [
     year: "2025",
     priority: 6,
     content: [
-      { type: "image", src: "/images/projects/video/video (1).jpg" },
+      { type: "youtube", videoId: "xbnzCkHF4ns" },
       { type: "text", body: "映像を通じて伝えるクリエイティブな表現。動きと音の調和で、視覚的なストーリーテリングを追求しました。" },
+    ],
+  },
+  {
+    id: "11",
+    title: "ビデオ作品タイトル 2",
+    category: ["ビデオ"],
+    image: "/images/projects/video/video (2).jpg",
+    description: "実験的な映像表現に挑戦した作品。光と影の移ろいを繊細に捉え、日常の一瞬を詩的に描き出しました。",
+    client: "クライアント名",
+    year: "2024",
+    priority: 4,
+    content: [
+      { type: "youtube", videoId: "SiSbt1-v5LI" },
+      { type: "text", body: "実験的な映像表現に挑戦した作品。光と影の移ろいを繊細に捉え、日常の一瞬を詩的に描き出しました。" },
+    ],
+  },
+  {
+    id: "12",
+    title: "その他作品タイトル 2",
+    category: ["その他"],
+    image: "/images/projects/other/other (2).jpg",
+    description: "既存の枠組みにとらわれない自由な発想から生まれたコンセプトワーク。素材の質感と空間の余白を活かし、新しい体験価値を提案しました。",
+    client: "クライアント名",
+    year: "2024",
+    priority: 5,
+    content: [
+      { type: "image", src: "/images/projects/other/other (2).jpg" },
+      { type: "text", body: "既存の枠組みにとらわれない自由な発想から生まれたコンセプトワーク。素材の質感と空間の余白を活かし、新しい体験価値を提案しました。" },
+    ],
+  },
+  {
+    id: "13",
+    title: "その他作品タイトル 3",
+    category: ["その他"],
+    image: "/images/projects/other/other (3).jpg",
+    description: "ジャンルを越えた実験的なクリエイティブプロジェクト。異なる領域の要素を組み合わせ、独自の表現世界を構築しました。",
+    client: "クライアント名",
+    year: "2025",
+    priority: 7,
+    content: [
+      { type: "image", src: "/images/projects/other/other (3).jpg" },
+      { type: "text", body: "ジャンルを越えた実験的なクリエイティブプロジェクト。異なる領域の要素を組み合わせ、独自の表現世界を構築しました。" },
+    ],
+  },
+  {
+    id: "14",
+    title: "プロダクト作品タイトル 2",
+    category: ["プロダクト"],
+    image: "/images/projects/product/product (2).jpg",
+    description: "使い手の暮らしに寄り添うプロダクトデザイン。機能美と素材の温もりを融合させ、日常を豊かにするアイテムを提案しました。",
+    client: "クライアント名",
+    year: "2024",
+    priority: 6,
+    content: [
+      { type: "image", src: "/images/projects/product/product (2).jpg" },
+      { type: "text", body: "使い手の暮らしに寄り添うプロダクトデザイン。機能美と素材の温もりを融合させ、日常を豊かにするアイテムを提案しました。" },
+    ],
+  },
+  {
+    id: "15",
+    title: "グラフィック作品タイトル 2",
+    category: ["グラフィック"],
+    image: "/images/projects/graphic/graphic (2).jpg",
+    description: "タイポグラフィと色彩の力を最大限に引き出したグラフィックデザイン。視覚的なインパクトと情報伝達の両立を目指しました。",
+    client: "クライアント名",
+    year: "2025",
+    priority: 8,
+    content: [
+      { type: "image", src: "/images/projects/graphic/graphic (2).jpg" },
+      { type: "text", body: "タイポグラフィと色彩の力を最大限に引き出したグラフィックデザイン。視覚的なインパクトと情報伝達の両立を目指しました。" },
     ],
   },
 ];
