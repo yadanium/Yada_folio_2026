@@ -50,6 +50,11 @@ export function HeroSlideshow() {
           />
         ))}
       </div>
+
+      {/* クレジット */}
+      <div className="absolute bottom-20 right-6 text-white text-sm">
+        <p className="text-white drop-shadow-lg">Photo by Waarrk, tueks</p>
+      </div>
     </div>
   );
 }

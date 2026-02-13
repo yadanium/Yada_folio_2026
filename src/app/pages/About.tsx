@@ -1,6 +1,7 @@
 import { Mail, ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
+import { Footer } from "../components/Footer";
 import { mediaItems } from "../data/media";
 
 const headerImage = "/images/common/header2.png";
@@ -15,16 +16,20 @@ export function About() {
       transition={{ duration: 0.5 }}
     >
       {/* ヘッダー画像 */}
-      <div className="w-full h-[300px] md:h-[400px] overflow-hidden bg-gray-100">
+      <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden bg-gray-100">
         <img
           src={headerImage}
           alt="About header"
           className="w-full h-full object-cover"
         />
+        {/* クレジット */}
+        <div className="absolute bottom-4 right-4 text-white text-sm">
+          <p className="text-white drop-shadow-lg">Photo by Waarrk, tueks</p>
+        </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-4xl mb-8">About</h1>
+        <h1 className="text-4xl mb-8">About me</h1>
 
         {/* プロフィールセクション */}
         <div className="flex flex-col md:flex-row gap-8 mb-12">
@@ -115,7 +120,7 @@ export function About() {
                 <Mail className="w-5 h-5 text-[#0BA29A] mt-1 shrink-0" />
                 <div>
                   <p className="text-sm text-gray-500">Email</p>
-                  <p>info@portfolio.com</p>
+                  <p>yadamisuzu3122@gmail.com</p>
                 </div>
               </div>
 
@@ -123,7 +128,10 @@ export function About() {
                 <img src="/images/icons/twitter.svg" alt="Twitter" className="w-5 h-5 mt-1 shrink-0 object-contain" />
                 <div>
                   <p className="text-sm text-gray-500">Twitter</p>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#0BA29A] hover:underline">@username</a>
+                  <a href="https://x.com/yada_kaeru" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-inherit hover:underline">
+                    @yada_kaeru
+                    <ExternalLink className="w-4 h-4 shrink-0" aria-hidden />
+                  </a>
                 </div>
               </div>
 
@@ -131,7 +139,7 @@ export function About() {
                 <img src="/images/icons/discord.svg" alt="Discord" className="w-5 h-5 mt-1 shrink-0 object-contain" />
                 <div>
                   <p className="text-sm text-gray-500">Discord</p>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#0BA29A] hover:underline">username#0000</a>
+                  <p>@yadanium</p>
                 </div>
               </div>
 
@@ -139,7 +147,10 @@ export function About() {
                 <img src="/images/icons/github.svg" alt="GitHub" className="w-5 h-5 mt-1 shrink-0 object-contain" />
                 <div>
                   <p className="text-sm text-gray-500">Github</p>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#0BA29A] hover:underline">github.com/username</a>
+                  <a href="https://github.com/yadanium" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-inherit hover:underline">
+                    github.com/yadanium
+                    <ExternalLink className="w-4 h-4 shrink-0" aria-hidden />
+                  </a>
                 </div>
               </div>
             </div>
@@ -148,6 +159,7 @@ export function About() {
       </div>
 
       <ScrollToTopButton />
+      <Footer />
     </motion.div>
   );
 }
