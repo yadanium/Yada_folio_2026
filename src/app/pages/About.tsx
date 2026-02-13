@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
+import { Mail, ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
 import { mediaItems } from "../data/media";
@@ -56,7 +56,7 @@ export function About() {
           アイデアや技術はあるけれど、どう伝えればいいか分からない。世界観はあるけれど、表現するのが難しい。<br/>
           そういったあと一歩をサポートするべく、丁寧にお話を伺い、ロゴ、パンフレット、パッケージ、製品外装など、最終的な仕上がりまで共に整えていきます。<br/>
           <br/>
-          開発者の想いがきちんと届くように。プロダクトが自分らしい姿で世に出ていけるように。<br/>
+          開発者の想いがきちんと届くように。プロダクトが自分らしい姿で世に出てゆけるように。<br/>
           隣で一緒に考える存在でありたいと思っています。<br/>
           </p>
         
@@ -112,7 +112,7 @@ export function About() {
 
             <div className="space-y-4">
               <div className="flex items-start gap-4">
-                <Mail className="w-5 h-5 text-[#0BA29A] mt-1" />
+                <Mail className="w-5 h-5 text-[#0BA29A] mt-1 shrink-0" />
                 <div>
                   <p className="text-sm text-gray-500">Email</p>
                   <p>info@portfolio.com</p>
@@ -120,18 +120,26 @@ export function About() {
               </div>
 
               <div className="flex items-start gap-4">
-                <Phone className="w-5 h-5 text-[#0BA29A] mt-1" />
+                <img src="/images/icons/twitter.svg" alt="Twitter" className="w-5 h-5 mt-1 shrink-0 object-contain" />
                 <div>
-                  <p className="text-sm text-gray-500">Phone</p>
-                  <p>03-1234-5678</p>
+                  <p className="text-sm text-gray-500">Twitter</p>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#0BA29A] hover:underline">@username</a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <MapPin className="w-5 h-5 text-[#0BA29A] mt-1" />
+                <img src="/images/icons/discord.svg" alt="Discord" className="w-5 h-5 mt-1 shrink-0 object-contain" />
                 <div>
-                  <p className="text-sm text-gray-500">Address</p>
-                  <p>東京都渋谷区1-2-3</p>
+                  <p className="text-sm text-gray-500">Discord</p>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#0BA29A] hover:underline">username#0000</a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <img src="/images/icons/github.svg" alt="GitHub" className="w-5 h-5 mt-1 shrink-0 object-contain" />
+                <div>
+                  <p className="text-sm text-gray-500">Github</p>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#0BA29A] hover:underline">github.com/username</a>
                 </div>
               </div>
             </div>
