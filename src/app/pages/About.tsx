@@ -39,16 +39,16 @@ export function About() {
               className="w-full aspect-square object-cover rounded-lg"
             />
           </div>
-          <div className="md:w-2/3 space-y-4 text-gray-700 leading-relaxed">
+          <div className="md:w-2/3 space-y-4 text-sm text-gray-700 leading-relaxed">
             <br/>
             <h2 className="text-2xl mb-4">矢田 美涼 / Yada Misuzu</h2>
-        
+          <br/>
             <p>
             「技術と人をつなぐデザイン」をモットーに、主に個人開発を行うエンジニアの方々<br/>
             とともにモノづくりに取り組んでいます。
             </p>
             <p>
-            「アイデアや技術を魅力的に伝えたい」「手に取りたいと思ってもらえるクオリティにしたい」<br/>
+            「アイデアや技術を魅力的に伝えたい」、「手に取りたいと思ってもらえるクオリティにしたい」<br/>
             その"あと一歩"をサポートするため、丁寧な対話を重ねながら細部まで磨き上げます。
             </p>
             <p>
