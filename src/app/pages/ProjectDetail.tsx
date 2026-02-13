@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
+import { ScrollToTopButton } from "../components/ScrollToTopButton";
 
 export function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
@@ -85,6 +86,8 @@ export function ProjectDetail() {
           </motion.div>
         ))}
       </div>
+
+      <ScrollToTopButton />
     </motion.div>
   );
 }
