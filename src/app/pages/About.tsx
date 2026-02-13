@@ -64,18 +64,23 @@ export function About() {
             <span className="w-1 h-6 bg-[#0BA29A]"></span>
             略歴
           </h2>
-          <ul className="space-y-3 text-gray-700 leading-relaxed">
-            <li className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0BA29A] mt-2.5 shrink-0"></span>
-              <span>千葉工業大学 創造工学部 デザイン科学科卒業</span>
+          <ul className="text-gray-700 leading-relaxed relative">
+            {/* 最初のドット中心から最後のドット中心までの縦線 */}
+            <span
+              className="absolute w-0.5 bg-[#0BA29A]"
+              style={{ left: "4px", top: "13px", bottom: "19px" }}
+            ></span>
+            <li className="flex gap-3 relative">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#0BA29A] mt-2 shrink-0 z-10"></span>
+              <span className="pb-5 pt-1.5">千葉工業大学 創造工学部 デザイン科学科卒業</span>
             </li>
-            <li className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0BA29A] mt-2.5 shrink-0"></span>
-              <span>慶應義塾大学大学院 政策・メディア研究科 XDプログラム在学中</span>
+            <li className="flex gap-3 relative">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#0BA29A] mt-2 shrink-0 z-10"></span>
+              <span className="pb-5 pt-1.5">慶應義塾大学大学院 政策・メディア研究科 XDプログラム在学中</span>
             </li>
-            <li className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0BA29A] mt-2.5 shrink-0"></span>
-              <span>在学中にヤダニウムとして個人事業主を開業</span>
+            <li className="flex gap-3 relative">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#0BA29A] mt-2 shrink-0 z-10"></span>
+              <span className="pt-1.5">在学中にヤダニウムとして個人事業主を開業</span>
             </li>
           </ul>
         </div>
