@@ -15,12 +15,12 @@ export function About() {
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.5 }}
     >
-      {/* ヘッダー画像 */}
-      <div className="w-full h-[300px] md:h-[400px] overflow-hidden bg-gray-100">
+      {/* ヘッダー画像（左右余白なしで全面表示） */}
+      <div className="w-full bg-gray-100">
         <img
           src={headerImage}
           alt="About header"
-          className="w-full h-full object-cover"
+          className="w-full h-auto object-cover"
         />
       </div>
 
