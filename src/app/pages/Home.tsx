@@ -72,6 +72,12 @@ export function Home() {
       <HeroSlideshow />
 
       <div className="max-w-7xl mx-auto px-6 py-12">
+        {/* Works見出し */}
+        <h2 className="text-2xl mb-6 flex items-center gap-3">
+          <span className="w-1 h-6 bg-[#0BA29A]"></span>
+          Works
+        </h2>
+
         {/* フィルターボタン */}
         <div
           id="works-filters"
