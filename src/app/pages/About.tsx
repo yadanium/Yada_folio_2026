@@ -107,7 +107,7 @@ export function About() {
             </h2>
             <ul className="space-y-1">
               <li className="flex items-center gap-2 py-0.5">
-                <span className="text-sm text-gray-500 shrink-0">2024.1.24</span>
+                <span className="text-sm text-gray-500 shrink-0 w-20">2024.1.24</span>
                 <a
                   href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2023-014207/30/ja"
                   target="_blank"
@@ -119,7 +119,7 @@ export function About() {
                 </a>
               </li>
               <li className="flex items-center gap-2 py-0.5">
-                <span className="text-sm text-gray-500 shrink-0">2024.10.7</span>
+                <span className="text-sm text-gray-500 shrink-0 w-20">2024.10.7</span>
                 <a
                   href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2024-000230/30/ja"
                   target="_blank"
@@ -140,23 +140,23 @@ export function About() {
             </h2>
             <ul className="space-y-1">
               <li className="flex items-center gap-2 py-0.5">
-                <span className="text-sm text-gray-500 shrink-0">2024.10.16</span>
+                <span className="text-sm text-gray-500 shrink-0 w-20">2024.10.16</span>
                 <span>株式会社aba「Helppad2」(印字デザイン担当) 2024グッドデザイン賞 </span>
               </li>
               <li className="flex items-center gap-2 py-0.5">
-                <span className="text-sm text-gray-500 shrink-0">2024.3.23</span>
+                <span className="text-sm text-gray-500 shrink-0 w-20">2024.3.23</span>
                 <span>千葉工業大学 創造工学部 デザイン科学科 卒業制作 最優秀賞</span>
               </li>
               <li className="flex items-center gap-2 py-0.5">
-                <span className="text-sm text-gray-500 shrink-0">2024.3.18</span>
-                <span>特許庁、文部科学省、日本弁理士会、独立行政法人工業所有権情報・研修館主催 デザインパテントコンテスト 優秀賞</span>
+                <span className="text-sm text-gray-500 shrink-0 w-20">2024.3.18</span>
+                <span>特許庁 文部科学省 日本弁理士会 独立行政法人工業所有権情報・研修館主催 デザインパテントコンテスト 優秀賞</span>
               </li>
               <li className="flex items-center gap-2 py-0.5">
-                <span className="text-sm text-gray-500 shrink-0">2023.12.27</span>
+                <span className="text-sm text-gray-500 shrink-0 w-20">2023.12.27</span>
                 <span>株式会社協同工芸社主催 看板おしゃれデザインコンペ2023 優秀賞</span>
               </li>
               <li className="flex items-center gap-2 py-0.5">
-                <span className="text-sm text-gray-500 shrink-0">2023.4.3</span>
+                <span className="text-sm text-gray-500 shrink-0 w-20">2023.4.3</span>
                 <span>公益財団法人千葉市産業振興財団主催 千葉市元気企業ロゴマーク作品募集 優秀賞</span>
               </li>
             </ul>
@@ -170,7 +170,7 @@ export function About() {
             <ul className="space-y-1">
               {mediaItems.map((item, index) => (
                 <li key={index} className="flex items-center gap-2 py-0.5">
-                  <span className="text-sm text-gray-500 shrink-0">{item.date}</span>
+                  <span className="text-sm text-gray-500 shrink-0 w-20">{item.date}</span>
                   <a
                     href={item.url}
                     target="_blank"
