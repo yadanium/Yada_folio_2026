@@ -1,6 +1,7 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
+import { mediaItems } from "../data/media";
 
 const headerImage = "/images/common/header2.png";
 const profileImage = "/images/common/profile.png";
@@ -78,6 +79,29 @@ export function About() {
               <li>2024 - Architecture Excellence Award</li>
               <li>2024 - Design Innovation Prize</li>
             </ul>
+          </div>
+
+          <div className="pt-8">
+            <h2 className="text-2xl mb-4">メディア</h2>
+            <ul className="space-y-4">
+              {mediaItems.map((item, index) => (
+                <li key={index} className="flex items-center gap-2 py-2 border-b border-gray-100 last:border-0">
+                  <span className="text-sm text-gray-500 shrink-0">{item.date}</span>
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-[#0BA29A] hover:underline font-medium"
+                  >
+                    {item.title}
+                    <ExternalLink className="w-4 h-4 shrink-0" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {mediaItems.length === 0 && (
+              <p className="text-gray-500 text-sm">掲載情報はありません。</p>
+            )}
           </div>
 
           <div className="pt-12 border-t border-gray-200 mt-12">
