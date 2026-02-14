@@ -137,16 +137,18 @@ export const projects: Project[] = [
   },
   {
     id: "13",
-    title: "ラボキャラクターデザイン",
+    title: "慶應鎌倉ラボキャラクターデザイン",
     category: ["グラフィック"],
     image: "/images/projects/graphic/キャラ目アートボード 2.png",
-    description: "ジャンルを越えた実験的なクリエイティブプロジェクト。異なる領域の要素を組み合わせ、独自の表現世界を構築しました。",
+    description: "慶應鎌倉ラボで用いられているキャラクターを整理し、リニューアル＆新規作成を行いました。",
     client: "慶應鎌倉ラボ",
     year: "2025",
     priority: 4,
     content: [
-      { type: "image", src: "/images/projects/other/other (3).jpg" },
-      { type: "text", body: "ジャンルを越えた実験的なクリエイティブプロジェクト。異なる領域の要素を組み合わせ、独自の表現世界を構築しました。" },
+      { type: "image", src: "/images/projects/graphic/キャラ目アートボード 2.png" },
+      { type: "text", body: "しげんポストのキャラクターとして存在していた「ループくん」、循環を表現する「カタツムリくん」をリニューアルし、新しく田中浩也氏原案のキャラクター5つをデザインし、7つのキャラクターとして再スタートしました。" },
+      { type: "image", src: "/images/projects/graphic/シールアートボード 1.png" },
+      { type: "text", body: "慶應鎌倉ラボのノベルティとしてシールを制作しました。" },
     ],
   },
   {
