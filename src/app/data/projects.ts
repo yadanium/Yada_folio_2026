@@ -70,13 +70,14 @@ export const projects: Project[] = [
     title: "Spin-MRI",
     category: ["プロダクト"],
     image: "/images/projects/product/product (1).jpg",
-    description: "ミニマルなプロダクト写真撮影。商品の本質を引き出し、シンプルで美しいビジュアルで表現しました。ブランドの価値を最大限に伝える作品です。",
+    description: "2025大阪・関西万博　エンタングルモーメント展に展示した、量子スピンセンサを用いたコンパクト低磁場MRI「Spin-MRI」の外装デザイン及び制作、ロゴデザインを制作しました。",
     client: "Yashiro , 東北大学 大兼研究室",
     year: "2025",
     priority: 3,
     content: [
+      { type: "image", src: "/images/projects/logo/logo (5).png" },
       { type: "image", src: "/images/projects/product/product (7).jpg" },
-      { type: "text", body: "ミニマルなプロダクト写真撮影。商品の本質を引き出し、シンプルで美しいビジュアルで表現しました。ブランドの価値を最大限に伝える作品です。" },
+      { type: "text", body: "特徴であるコンパクトさを活かしつつ、未来の医療機器としての存在感、先進性と信頼感を併せ持つデザインを制作しました。" },
     ],
   },
   {
