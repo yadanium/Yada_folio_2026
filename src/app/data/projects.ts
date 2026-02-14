@@ -127,13 +127,13 @@ export const projects: Project[] = [
     title: "おかえりベンチ制作動画",
     category: ["ビデオ"],
     image: "/images/projects/other/video (1).png",
-    description: "実験的な映像表現に挑戦した作品。光と影の移ろいを繊細に捉え、日常の一瞬を詩的に描き出しました。",
+    description: "鎌倉市で回収されている「製品プラスチック」を用いて３Dプリント材料を作成し、インクルーシブベンチを制作して鎌倉市役所前に憩いの場として設置した「おかえりベンチ」プロジェクト。",
     client: "慶應鎌倉ラボ",
     year: "2024",
     priority: 1,
     content: [
       { type: "youtube", videoId: "SiSbt1-v5LI" },
-      { type: "text", body: "実験的な映像表現に挑戦した作品。光と影の移ろいを繊細に捉え、日常の一瞬を詩的に描き出しました。" },
+      { type: "text", body: "動画撮影（一部を除く）、動画編集を担当しました。" },
     ],
   },
   {
