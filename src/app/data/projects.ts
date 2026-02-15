@@ -58,7 +58,7 @@ export const projects: Project[] = [
     year: "2023",
     priority: 3,
     content: [
-      { type: "image", src: "/images/projects/project-5-main.jpg" },
+      { type: "image", src: "/images/projects/graphic/駐車場アートボード 1.png" },
       { type: "text", body: "a" },
     ],
   },
